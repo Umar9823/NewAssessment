@@ -1,0 +1,81 @@
+/* General container styles */
+.widget-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between widgets */
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+/* Widget styles */
+.widget {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 350px; /* Adjust width to match the image */
+  height: 180px; /* Adjust height to match the image */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.widget:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.widget-title {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.widget-header{
+  margin-top: -20px;
+}
+
+.widget-content {
+  display: flex;
+  flex: 1;
+  width: 100%; /* Ensure the content takes full width of its parent */
+  height: 120px !important; /* Force the height to apply */
+  align-items: center; /* Center-align the content vertically */
+  justify-content: center; /* Center-align the content horizontally */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .widget {
+    width: 280px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .widget-container {
+    justify-content: center;
+  }
+  
+  .widget {
+    width: 220px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    width: 180px;
+    height: 120px;
+  }
+}
+
+.remove-widget {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Add other styles as needed */
+}
+

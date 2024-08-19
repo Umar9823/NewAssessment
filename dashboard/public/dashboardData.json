@@ -1,0 +1,115 @@
+{
+  "mainHeading": "CNAPP Dashboard",
+  "headerButtons": [
+    {
+      "type": "addWidget",
+      "label": "Add Widget",
+      "icon": "fa-plus"
+    },
+    {
+      "type": "refresher",
+      "label": "Refresh",
+      "icon": "fa-sync"
+    },
+    {
+      "type": "options",
+      "label": "Options",
+      "icon": "fa-ellipsis"
+    },
+    {
+      "type": "dateDropdown",
+      "label": "2 Days",
+      "icon": "fa-caret-down"
+    }
+  ],
+  "categories": [
+    {
+      "title": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "type": "pie",
+          "title": "Cloud Accounts",
+          "data": [
+            { "name": "Connected", "value": 1, "color": "#5578ff" },
+            { "name": "Not Connected", "value": 1, "color": "#e1ebff" }
+          ]
+        },
+        {
+          "type": "pie",
+          "title": "Cloud Account Risk Assessment",
+          "data": [
+            { "name": "Failed", "value": 1689, "color": "#FF4D4F" },
+            { "name": "Warning", "value": 681, "color": "#FFA940" },
+            { "name": "Not available", "value": 36, "color": "#A0A0A0" },
+            { "name": "Passed", "value": 7253, "color": "#52C41A" }
+          ]
+        },
+        {
+          "type": "button",
+          "data": {
+            "label": "+ Add Widget",
+            "action": "addWidget"
+          }
+        }
+      ]
+    },
+    {
+      "title": "CWPP Dashboard",
+      "widgets": [
+        {
+          "type": "text",
+          "title": "Top 5 Namespace Specific Alerts",
+          "data": "No Graph data available!"
+        },
+        {
+          "type": "text",
+          "title": "Workload Alerts",
+          "data": "No Graph data available!"
+        },
+        {
+          "type": "button",
+          "data": {
+            "label": "+ Add Widget",
+            "action": "addWidget"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Registry Scan",
+      "widgets": [
+        {
+          "type": "bullet",
+          "title": "Image Risk Assessment",
+          "data": [
+            {
+              "name": "Metric 1",
+              "range": 70,
+              "performance": 30,
+              "target": 50
+            }
+          ]
+        },
+        {
+          "type": "bullet",
+          "title": "Image Security Issue",
+          "data": [
+            {
+              "name": "Metric 2",
+              "range": 100,
+              "performance": 50,
+              "target": 75
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "data": {
+            "label": "+ Add Widget",
+            "action": "addWidget"
+          }
+        }
+      ]
+    }
+  ]
+}

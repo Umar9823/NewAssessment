@@ -1,0 +1,79 @@
+body {
+  background-color: #f0f5fa; /* More subtle background color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  padding: 20px; /* Padding around the main content */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column; /* Ensure categories stack vertically */
+  width: 100%; /* Take full width */
+}
+.category-section{
+  margin-top: -2rem;
+}
+
+.category-title{
+  margin-left: 22px;
+}
+
+.category {
+  margin-top: -2rem;
+  background-color: #f0f0f5; /* Add background color for each category */
+  padding: 20px;
+  border-radius: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+
+.widgets-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow widgets to wrap */
+  gap: 20px; /* Adjust spacing between widgets */
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-button {
+  border: 1px solid #333;
+  background-color: #f0f0f5;
+  border-radius: 6px;
+  color: #14147d;
+  padding: 7px;
+}
+
+.header-button i {
+  margin-right: 5px;
+}
+
+#filter-btn{
+  color: #14147d;
+  font-weight: bold;
+}
+
+#clock{
+  color: #14147d;
+}

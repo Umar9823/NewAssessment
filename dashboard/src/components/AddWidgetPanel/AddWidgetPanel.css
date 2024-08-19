@@ -1,0 +1,114 @@
+.add-widget-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 450px; /* Increased width */
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  background-color: #14147d;
+  color: white;
+}
+
+.panel-footer{
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.category-tabs {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.category-tabs button {
+  flex: 1;
+  padding: 5px;
+  background-color: #f0f0f5;
+  border: none;
+  cursor: pointer;
+}
+
+.category-tabs button.active {
+  background-color: #1890ff;
+  color: white;
+}
+
+.widget-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-options label {
+  margin-bottom: 10px;
+}
+
+.panel-footer {
+  border-top: none; /* Remove border from footer */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button, .add-button {
+  padding: 6px 16px;
+  border: none;
+  background-color: #14147d;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.close-button {
+  background-color: #fff;
+  border: 1px solid #14147d;
+  color: #14147d;
+}
+
+.add-button {
+  background-color: #14147d;
+}
+
+.widget-form {
+  margin-top: 20px;
+}
+
+.widget-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.widget-form input, 
+.widget-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.widget-form textarea {
+  height: 100px;
+}
